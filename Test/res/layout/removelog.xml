@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting1"
+            android:id="@+id/setremove"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/setremove2"
+        android:text="@string/setremove2"
+        android:layout_width="180dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custombar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonw"
+        android:onClick="changepw"/>
+    <Button
+        android:id="@+id/setremove3"
+        android:text="@string/setremove3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setremove2"
+        android:background="@drawable/buttonw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="logout"/>
+    <Button
+        android:id="@+id/setremove4"
+        android:text="@string/setremove4"
+        android:layout_width="180dp"
+        android:layout_below="@+id/setremove3"
+        android:background="@drawable/buttonw"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="removeid"/>
+
+</RelativeLayout>

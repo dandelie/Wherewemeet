@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/friendlist"
+            android:id="@+id/friendlisttitle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/custombar"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/friend"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="친구 아이디를 입력해주세요"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:id="@+id/friendsave"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="친구추가"
+            android:onClick="friendsave"
+            android:background="@drawable/rounded_cornerb" />
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/f5"
+            android:id="@+id/mrrefreshbutton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="0dp"
+            android:onClick="refresh"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/friendlist"
+            android:fastScrollEnabled="true"
+            android:fadeScrollbars="false"
+            android:background="@drawable/rounded_cornerc" />
+
+    </LinearLayout>
+
+</RelativeLayout>

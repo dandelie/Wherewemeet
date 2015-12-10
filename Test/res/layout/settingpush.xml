@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+    
+    
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="푸시 알림 설정"
+            android:id="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:text="★ 독촉 알람 설정"
+        android:id="@+id/settingpush1"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/custombar" />
+    
+    <Switch
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:textSize="13dp"
+        android:id="@+id/switch1"
+        android:checked="true"
+        android:showText="false"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@+id/settingpush1"
+        android:layout_alignBaseline="@+id/settingpush1"  />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="(알람이 오면 앱을 실행시켜 나의 입력을 기다리는 약속이 있나 봐주세요)"
+        android:id="@+id/settingpush2"
+        android:layout_below="@+id/settingpush1"/>
+
+    
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/settingpush2">
+        
+        <RadioButton
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/radio1"
+	        android:text="3시간마다  (오전 9시부터)"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/radio2"
+	        android:text="6시간마다  (9시,15시,21시)"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/radio3"
+	        android:text="6시간마다  (12시,18시,00시)"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/radio4"
+	        android:text="12시간마다  (12시,00시)"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/radio5"
+	        android:text="12시간마다  (9시,21시)"/>
+        
+	</RadioGroup>
+    
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/button"
+        android:onClick="complete"
+        android:background="@drawable/rounded_cornerb"
+        android:text="완료"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

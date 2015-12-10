@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/loginidid"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp" />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/loginwar"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_cornerb"
+        android:padding="15dp"
+        android:layout_below="@+id/title2"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login1"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newid"
+            android:hint="@string/IDhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/user"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/user"
+            />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user"
+            android:paddingTop="16dp"
+            android:text="@string/login2"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newpassword"
+            android:hint="@string/PWhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/password"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/password"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/nikname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/login5"
+            android:layout_below="@+id/password"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/niknameEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Nicknamehint"
+            android:layout_alignTop="@+id/nikname"
+            android:layout_toRightOf="@id/nikname"
+            android:layout_marginLeft="4dp"
+            android:layout_alignBaseline="@id/nikname"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dp"
+        android:text="@string/logewid"
+        android:onClick="logewid"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@drawable/buttonp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

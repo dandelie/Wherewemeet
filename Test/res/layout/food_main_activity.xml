@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:text="음식 선택하기"
+            android:id="@+id/selectmeet"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/custombar"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음식 카테고리"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/food"
+            android:layout_marginLeft="8dp"
+            android:text="10dp"
+            />
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/search"
+            android:onClick="categorygo"
+            android:layout_marginLeft="10dp"/>
+        
+    </LinearLayout>
+   
+      
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"        
+                android:layout_marginLeft="30dp"                
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linearLayout"
+        android:text="좋아하는 음식"/>
+    <LinearLayout
+ 	    android:layout_width="300dp"
+ 	    android:layout_height="30dp"
+ 	    android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/t1"
+        android:id="@+id/linearLayout3"
+        android:background="@drawable/rounded_cornerb">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goodtxt"
+        android:text="좋아하는 음식을 선택하면 여기에 표시됩니다."/>
+        </LinearLayout>
+                <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"        
+                android:layout_marginLeft="30dp"
+        android:layout_below="@+id/linearLayout3"        
+        android:layout_marginTop="15dp"
+        android:text="싫어하는 음식"/>
+     <LinearLayout
+ 	    android:layout_width="300dp"
+ 	    android:layout_height="30dp"
+ 	    android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/t2"
+        android:id="@+id/linearLayout3_2"
+        android:background="@drawable/rounded_cornerb">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:id="@+id/badtxt"
+        android:text="싫어하는 음식을 선택하면 여기에 표시됩니다."/>
+    </LinearLayout>
+    
+    <LinearLayout
+ 	    android:layout_width="300dp"
+ 	    android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout3_2"
+        android:id="@+id/linearLayoutb"
+        android:background="@drawable/rounded_cornerb">
+    <TextView
+                android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:id="@+id/t3"
+        />
+   <ScrollView
+	    android:id="@+id/roomscroll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:fastScrollEnabled="true"
+	    android:fadeScrollbars="false">
+      
+	<LinearLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical" 
+	    android:id="@+id/linearLayout4">
+	    
+  </LinearLayout>
+  
+  </ScrollView>
+  </LinearLayout>
+    
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/selected01"
+        android:id="@+id/newnext"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="newnext"
+        android:layout_below="@+id/linearLayoutb"
+        android:background="@drawable/buttonw" />
+
+</RelativeLayout>

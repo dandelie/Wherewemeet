@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeact0"
+            android:id="@+id/timeact0"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/timeact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:layout_below="@+id/custombar"
+        android:textSize="18dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select"
+        android:layout_below="@+id/timeact"
+        android:paddingTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutt"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/timeselect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="선택"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/timeselect2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="세부선택"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select3"
+        android:layout_toRightOf="@+id/select"
+        android:layout_alignTop="@+id/select"
+        android:background="@drawable/rounded_cornerb"
+        android:layout_marginLeft="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayoutf"
+            android:baselineAligned="false"
+            android:gravity="center"
+
+            >
+
+            <CheckBox android:id="@+id/timeact1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오전"
+                android:layout_marginRight="22dp"/>
+
+            <CheckBox android:id="@+id/timeact2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오후"
+                android:layout_marginRight="22dp"
+                />
+
+            <CheckBox android:id="@+id/timeact3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저녁"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select2"
+        android:layout_below="@+id/select3"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:gravity="center_horizontal"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:padding="10dp">
+                />
+
+                />
+                <CheckBox android:id="@+id/datecheckBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9시"
+                    />
+
+                <CheckBox android:id="@+id/datecheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10시"
+                    />
+
+                <CheckBox android:id="@+id/datecheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12시"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.4"
+                android:layout_marginRight="5dp"
+                android:padding="10dp">
+
+                <CheckBox android:id="@+id/datecheckBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1시"
+                    />
+
+                <CheckBox android:id="@+id/datecheckBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2시"
+                    />
+
+                <CheckBox android:id="@+id/datecheckBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5시"
+                    />
+
+                <CheckBox android:id="@+id/datecheckBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6시"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:padding="10dp">
+
+                <CheckBox android:id="@+id/datecheckBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7시"
+                    />
+
+                <CheckBox android:id="@+id/datecheckBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11시"
+                    />
+                <CheckBox android:id="@+id/datecheckBox16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12시"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/selected01"
+        android:id="@+id/button"
+        android:background="@drawable/buttonw"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="datecheckdone"
+        android:layout_below="@+id/select2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/removepass"
+            android:id="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_cornerb"
+        android:layout_margin="20dp"
+        android:padding="10dp" android:id="@+id/relativeLayout"
+        android:layout_below="@+id/custombar">
+
+        <TextView android:id="@+id/removeold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/removeold" android:textSize="18dp" />
+
+        <EditText android:id="@+id/passwordEntry"
+            android:hint="@string/removeoldhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/removeold"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/removeold"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/removenew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="@string/removenew"
+            android:layout_below="@+id/removeold"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newpasswordEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/removenewhint"
+            android:layout_alignTop="@+id/removenew"
+            android:layout_toRightOf="@id/removenew"
+            android:layout_marginLeft="4dp"
+            android:layout_alignBaseline="@id/removenew"
+            />
+
+        <TextView
+            android:id="@+id/removenew2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="New Password 재입력"
+            android:layout_below="@+id/removenew"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newpasswordEntry2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/removenewhint"
+            android:layout_alignTop="@+id/removenew2"
+            android:layout_toRightOf="@id/removenew2"
+            android:layout_marginLeft="4dp"
+            android:layout_alignBaseline="@id/removenew2"
+            />
+
+    </RelativeLayout>
+
+    <Button android:id="@+id/removepass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dp"
+        android:text="@string/removepass"
+        android:onClick="removepassword"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

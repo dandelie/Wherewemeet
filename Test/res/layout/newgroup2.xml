@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new2t"
+            android:id="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/custombar"
+        android:text="@string/datehint3"
+        android:textSize="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="15dp" />
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/title2"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_cornerb"  android:id="@+id/relativeLayout">
+
+        <TextView android:id="@+id/new2a"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new2a"
+            android:textSize="18dp" />
+
+        <TextView android:id="@+id/dateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/new2a"
+            android:textSize="17dp" android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/new2a" android:hint="@string/Datehint" />
+
+        <Button android:id="@+id/pickDate"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/dateDisplay"
+            android:background="@drawable/buttonp"
+            android:text="@string/new2apickb" />
+
+        <TextView android:id="@+id/new2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new2a"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:text="모임 시간"
+            android:textSize="18dp" />
+
+        <TextView android:id="@+id/new2cEntry"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/new2c"
+            android:textSize="16dp" android:inputType="time"
+            android:ems="10" android:hint="@string/new2chint"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/new2c" />
+
+        <Button android:id="@+id/makemeetgo"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/pickDate"
+            android:text="@string/new2apickb"
+            android:background="@drawable/buttonp"
+            android:layout_toRightOf="@id/new2cEntry"
+            />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/new2c"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearLayout" />
+
+        <TextView android:id="@+id/new2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/new2b" android:textSize="18dp" />
+
+        <RadioGroup android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/new2b"
+            android:id="@+id/radiogroup01">
+
+            <RadioButton android:id="@+id/radio01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:text="@string/new2b1" />
+
+            <RadioButton android:id="@+id/radio02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp" android:layout_weight="1"
+                android:text="@string/new2b2" />
+
+            <RadioButton android:id="@+id/radio03" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp" android:layout_weight="1"
+                android:text="@string/new2b3" />
+
+            <RadioButton android:id="@+id/radio04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp" android:layout_weight="1"
+                android:text="@string/new2b4" />
+
+        </RadioGroup>
+
+        <Button android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newnext"
+            android:id="@+id/newnext"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/new2b"
+            android:background="@drawable/buttonp"
+            android:layout_centerHorizontal="true"
+            android:onClick="newnext" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

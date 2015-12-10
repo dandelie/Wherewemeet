@@ -1,0 +1,432 @@
+<resources>
+    <string name="app_name">WhereWeMeet</string>
+    <string name="main">약속 정해주는 여자</string>
+    <string name="login">로그인 화면</string>
+    <string name="loginidid">회원가입 정보 입력</string>
+    <string name="loginwar">(아이디, 비밀번호는 15자 미만)</string>
+    <string name="IDhint">아이디를 입력하시오</string>
+    <string name="PWhint">비밀번호를 입력하시오</string>
+    <string name="Nicknamehint">가입 후 변경 불가 (되도록 실명으로 해주세요)</string>
+    <string name="login1">User ID : </string>
+    <string name="login2">Password : </string>
+    <string name="login3">Login</string>
+    <string name="login4">회원가입</string>
+    <string name="login5">Nickname : </string>
+    <string name="logewid">가입완료</string>
+    <string name="logewid2">입력완료</string>
+    <string name="logintest">로그인 확인</string>
+    <string name="selected01">선택완료</string>
+    <string name="selected02">작성완료</string>
+    <string name="lognewidlog">생성한 아이디로 로그인</string>
+    <string name="mainselect">메인 메뉴</string>
+    <string name="mainselect1">약정방 그룹 만들기</string>
+    <string name="mainselect2">약정방 관리</string>
+    <string name="mainselect3">친구 관리</string>
+    <string name="mainselect4">환경설정</string>
+    <string name="mainbutton">touch to screen</string>
+    <string name="full">전체 약정방 보기</string>
+    <string name="full1">고교동창모임</string>
+    <string name="full2">컴퓨터 공학 동기들</string>
+    <string name="full3">동아리</string>
+    <string name="full4">신촌자취팸</string>
+    <string name="full5">약정방 편집</string>
+    <string name="hello_world">일정</string>
+    <string name="hello_world2">일정 정하기</string>
+    <string name="calculate">계산시작!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">HOME</string>
+    <string name="radio1">1. 휴식, 피크닉</string>
+    <string name="radio2">2. 공연, 예술</string>
+    <string name="radio3">3. 먹거리, 시장</string>
+    <string name="radio4">4. 대형 쇼핑몰</string>
+    <string name="radio5">5. 길거리 쇼핑</string>
+    <string name="radio6">6. 놀이공원</string>
+    <string name="radio7">7. 고궁, 전통문화</string>
+    <string name="text1">테마 선택</string>
+    <string name="nature1">서울숲</string>
+    <string name="nature2">올림픽공원</string>
+    <string name="nature3">하늘공원</string>
+    <string name="nature4">낙산공원</string>
+    <string name="nature5">석촌호수</string>
+    <string name="nature6">북서울꿈의숲</string>
+    <string name="nature7">올림픽공원</string>
+    <string name="nature8">홍릉수목원</string>
+    <string name="nature9">보라매공원</string>
+    <string name="nature10">남산</string>
+    <string name="nature11">청계천</string>
+    <string name="nature12">여의도공원</string>
+    <string name="mall1">타임스퀘어</string>
+    <string name="mall2">센트럴파크</string>
+    <string name="mall3">명동</string>
+    <string name="mall4">가든파이브</string>
+    <string name="mall5">테크노마트</string>
+    <string name="mall6">코엑스</string>
+    <string name="mall7">디큐브시티</string>
+    <string name="mall8">왕십리 엔터식스</string>
+    <string name="musical1">대학로</string>
+    <string name="musical2">예술의전당</string>
+    <string name="musical3">세종문화회관</string>
+    <string name="musical4">LG아트센터</string>
+    <string name="musical5">서울시립미술관</string>
+    <string name="musical6">충무아트홀</string>
+    <string name="musical7">국립극장 해오름극장</string>
+    <string name="musical8">삼성미술관 리움</string>
+    <string name="street1">강남역</string>
+    <string name="street2">고속터미널</string>
+    <string name="street3">신촌</string>
+    <string name="street4">동대문</string>
+    <string name="street5">명동</string>
+    <string name="street6">홍대</string>
+    <string name="street7">이대</string>
+    <string name="street8">영등포</string>
+    <string name="street9">신사동 가로수길</string>
+    <string name="street10">건대</string>
+    <string name="street11">숙대</string>
+    <string name="street12">삼청동</string>
+    <string name="street13">압구정 로데오거리</string>
+    <string name="street14">양재동 꽃시장</string>
+    <string name="market1">신림동 순대타운</string>
+    <string name="market2">홍대 맛집</string>
+    <string name="market3">신당동 떡볶이</string>
+    <string name="market4">장충동 족발</string>
+    <string name="market5">의정부 부대찌개거리</string>
+    <string name="market6">왕십리 곱창</string>
+    <string name="market7">노량진 수산시장</string>
+    <string name="market8">광장시장</string>
+    <string name="market9">통인시장</string>
+    <string name="market10">남대문시장</string>
+    <string name="amuse1">에버랜드</string>
+    <string name="amuse2">롯데월드</string>
+    <string name="amuse3">서울대공원</string>
+    <string name="amuse4">어린이대공원</string>
+    <string name="palace1">경복궁</string>
+    <string name="palace2">창덕궁</string>
+    <string name="palace3">창경궁</string>
+    <string name="palace4">덕수궁</string>
+    <string name="palace5">경희궁</string>
+    <string name="palace6">삼청동</string>
+    <string name="palace7">북촌한옥마을</string>
+    <string name="palace8">인사동</string>
+    <string name="palace9">남산골 한옥마을</string>
+    <string name="palace10">연남동 마을시장</string>
+    <string name="foodact0">음식 종류 선택</string>
+    <string name="foodact1">샐러드 바</string>
+    <string name="foodact2">패밀리 레스토랑</string>
+    <string name="foodact3">일식</string>
+    <string name="foodact4">중식</string>
+    <string name="foodact5">고깃집</string>
+    <string name="foodact6">피잣집</string>
+    <string name="foodact7">호프집, 술집</string>
+    <string name="foodact8">베트남, 타이</string>
+    <string name="foodact9">분식집</string>
+    <string name="foodact10">백반집</string>
+    <string name="event0">이벤트 선택</string>
+    <string name="event1">게임</string>
+    <string name="event2">영화</string>
+    <string name="event3">노래방</string>
+    <string name="event4">술약속</string>
+    <string name="event5">당구</string>
+    <string name="event6">볼링</string>
+    <string name="event7">클럽</string>
+    <string name="event8">수다</string>
+    <string name="event9">보드게임방</string>
+    <string name="event10">동물카페</string>
+    <string name="event11">쇼핑</string>
+    <string name="event12">산책</string>
+    <string name="event13">피크닉</string>
+    <string name="event14">멀티방</string>
+    <string name="event15">네일아트</string>
+    <string name="event16">맛집탐방</string>
+    <string name="event17">책구경</string>
+    <string name="event18">야구관람</string>
+    <string name="event19">축구관람</string>
+    <string name="event20">농구관람</string>
+    <string name="event21">배구관람</string>
+    <string name="event22">콘서트</string>
+    <string name="event23">전시회</string>
+    <string name="timeact">(2015년 08월 21일)</string>
+    <string name="timeact0">시간 선택하기</string>
+    <string name="timeselect1">선택 : </string>
+    <string name="timeselect2">세부 선택 : </string>
+    <string name="timeact1">오전</string>
+    <string name="timeact2">오후</string>
+    <string name="timeact3">저녁</string>
+    <string name="datecheckBox1">9시</string>
+    <string name="datecheckBox2">10시</string>
+    <string name="datecheckBox3">11시</string>
+    <string name="datecheckBox4">12시</string>
+    <string name="datecheckBox5">1시</string>
+    <string name="datecheckBox6">2시</string>
+    <string name="datecheckBox7">3시</string>
+    <string name="datecheckBox8">4시</string>
+    <string name="datecheckBox9">5시</string>
+    <string name="datecheckBox10">6시</string>
+    <string name="datecheckBox11">7시</string>
+    <string name="datecheckBox12">8시</string>
+    <string name="datecheckBox13">9시</string>
+    <string name="datecheckBox14">10시</string>
+    <string name="datecheckBox15">11시</string>
+    <string name="datecheckBox16">12시</string>
+    <string name="setting1">계정정보 변경</string>
+    <string name="setting2">푸시알림 설정</string>
+    <string name="setting3">앱 업데이트</string>
+    <string name="setting4">약정녀 앱 설치링크 복사하기</string>
+    <string name="setting5">로그아웃</string>
+    <string name="removeid">회원 탈퇴하기</string>
+    <string name="removeidhint">(아이디, 비밀번호 재입력 필요)</string>
+    <string name="removeidnot">돌아가기</string>
+    <string name="removeidgo">회원 탈퇴</string>
+    <string name="removenikhint">(닉네임은 15자 미만)</string>
+    <string name="removenik">닉네임 변경하기</string>
+    <string name="removepass">비밀번호 변경하기</string>
+    <string name="removeold">Old Password : </string>
+    <string name="removenew">New Password : </string>
+    <string name="removeoldhint">현재 비밀번호를 입력하시오</string>
+    <string name="removenewhint">새 비밀번호를 입력하시오</string>
+    <string name="setremove1">닉네임 변경</string>
+    <string name="setremove2">비밀번호 변경</string>
+    <string name="setremove3">지난 약속 삭제</string>
+    <string name="setremove4">모든 그룹에서 나가기</string>
+    <string name="settingpush">ON/OFF</string>
+    <string name="settingpush1">전체알림</string>
+    <string name="settingpush2">그룹 초대 알림</string>
+    <string name="settingpush3">모르는 친구의 그룹 초대 받기</string>
+    <string name="settingpush4">선택완료 알림 받기</string>
+    <string name="friendsave">친구검색</string>
+    <string name="frienddel">친구삭제</string>
+    <string name="friendlist">현재 친구 목록</string>
+    <string name="makeroomname">방 제목 입력 : </string>
+    <string name="makeroomhint">15자 이내</string>
+    <string name="makeroom">방 내용</string>
+    <string name="makeroom1">날짜</string>
+    <string name="makeroom2">장소</string>
+    <string name="makeroom3">먹을거리</string>
+    <string name="makeroom4">이벤트</string>
+    <string name="makeroom5">다음 단계로</string>
+    <string name="makeroomfriend">초대할 친구 선택</string>
+    <string name="makeroomfriend1">선택완료</string>
+    <string name="roomdata">방 정보</string>
+    <string name="roomname">약속 이름</string>
+    <string name="roomdataname">그룹 이름 : </string>
+    <string name="roomdatafr">참여자</string>
+    <string name="roomdata1">날짜 : </string>
+    <string name="roomdata2">장소 : </string>
+    <string name="roomdata3">음식 : </string>
+    <string name="roomdata4">이벤트 : </string>
+    <string name="roomdatago">정보 입력</string>
+    <string name="roomdata_y">입력완료</string>
+    <string name="roomdata_n">미입력</string>
+    <string name="roomdataout">메인 메뉴로</string>
+    <string name="roomdatanot">다른 약속 선택</string>
+    <string name="roomselect">그룹 선택하기</string>
+    <string name="makemeet">약속 생성</string>
+    <string name="makemeetname">약속 이름 입력 : </string>
+    <string name="makemeetgo">약속 만들기</string>
+    <string name="selectmeet">그룹 이름</string>
+    <string name="roomfriend">참여자 : </string>
+    <string name="roomfriendname">친구의 이름들</string>
+    <string name="roommeet">다가오는 약속 </string>
+    <string name="roommeet2">약속 정하기 상태 : </string>
+    <string name="roommeetd2">장소 통합중</string>
+    <string name="roommeetgo">정보 입력 진행하기</string>
+    <string name="roommeetgon">새 약속 만들기</string>
+    <string name="roommeetlist">지난 약속 리스트</string>
+    <string name="roomfriend1">강한나 : </string>
+    <string name="roomfriendd1">입력완료</string>
+    <string name="roomdatego">날짜 입력 or 투표 진행하기</string>
+    <string name="roomdatelist">현재까지 정해진 정보</string>
+    <string name="DateDisplayout">선택 날짜 : </string>
+    <string name="Date">날짜 범위 선택</string>
+    <string name="Date2">(최대 날짜 범위는 7일~20일)</string>
+    <string name="pickDate">시작 날짜 입력 </string>
+    <string name="puttime">범위 변경 : </string>
+    <string name="Dateput">선택한 날짜 저장</string>
+    <string name="Datehint">날짜가 뜸</string>
+    <string name="Datehint2">14일</string>
+    <string name="Dateb">변경</string>
+    <string name="Datesb">시작 날짜 : </string>
+    <string name="timego">시간 선택하기</string>
+    <string name="datehint3">Tip : 달력을 위아래로 끌면 월 변경 가능</string>
+    <string name="newnext">다음으로</string>
+    <string name="newfind">선택완료</string>
+    <string name="new1t">만남의 주기는?</string>
+    <string name="new1y">정기적인 모임</string>
+    <string name="new1n">비정기적인 모임</string>
+    <string name="new1hint">tip : 정기 모임은 시간 통합을 하지 않습니다</string>
+    <string name="new2t">정기 모임 일정 입력</string>
+    <string name="new2a">모임 시작 날짜 :</string>
+    <string name="new2apick">시작 날짜 입력</string>
+    <string name="new2b">주기 : </string>
+    <string name="new2b1">1주</string>
+    <string name="new2b2">2주</string>
+    <string name="new2b3">1달</string>
+    <string name="new2b4">2달</string>
+    <string name="new2bpick">시간 입력</string>
+    <string name="new2c">모임 시간 : </string>
+    <string name="new2chint">0시 0분</string>
+    <string name="new3t">모임의 목적은?</string>
+    <string name="new3y">단순 친목 모임</string>
+    <string name="new3n">일/공부/취미 등 목적모임</string>
+    <string name="new3hint">tip : 목적이 있는 모임은 놀러다니기에 좋은 장소를 추천하지 않습니다</string>
+    <string name="new4t">모임의 장소는?</string>
+    <string name="new4a">장소가 고정되어 있습니다</string>
+    <string name="new4b">지역 근처에서 만나고 싶습니다</string>
+    <string name="new4c">먼 장소에서 만나도 괜찮습니다</string>
+    <string name="new4hint">tip : </string>
+    <string name="new5t">장소 입력하기</string>
+    <string name="new5hint">tip : </string>
+    <string name="new5a">장소 입력 : </string>
+    <string name="new5ahint">장소를 입력하시오</string>
+    <string name="new6t">만남 지역 입력하기</string>
+    <string name="new6hint">tip : </string>
+    <string name="new6a">이미지 버튼</string>
+    <string name="new6sp">구 선택</string>
+    <string name="new2sp">날짜 간격 선택</string>
+    <string name="selectmeetdata">다가오는 약속 내용 자세히 보기</string>
+    <string name="resulttitlen">(통합 진행중) 9월 5일</string>
+    <string name="resulttitle">(통합종료 만남) 9월 1일</string>
+    <string name="roomresult1">일정 결과 : </string>
+    <string name="roomresultd1">텍스트뷰</string>
+    <string name="roomresultnd1">텍스트뷰</string>
+    <string name="roomresult2">장소 결과 : </string>
+    <string name="roomresultd2">텍스트뷰</string>
+    <string name="roomresultnd2">입력완료, 미통합</string>
+    <string name="roomresult3">음식 결과 : </string>
+    <string name="roomresultd3">텍스트뷰</string>
+    <string name="roomresultnd3">미입력</string>
+    <string name="roommeetgo2">정보 입력or입력 안한 사람 독촉하기</string>
+    <string name="roommeetin">입력중인 약속 : </string>
+    <string name="roommeetdin">(간략제목) 9월 5일 </string>
+    <string name="selectalmn">단계별 통합 완료시 알람 ON</string>
+    <string name="selectalm">날짜 근접시 알람 ON</string>
+    <string name="resultdel">일정 삭제하기</string>
+    <string name="spinner1">마다</string>
+    <string name="spinner2">째주</string>
+    <string name="spinner3">요일</string>
+    <string name="placetitle">장소 선택하기</string>
+    <string name="place">테마 선택</string>
+    <string name="placesubway">지하철</string>
+    <string name="placego">검색</string>
+	<string name="new2apickb">선택</string>	
+
+    <string-array name="Seoul">
+
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>강북구</item>
+        <item>강서구</item>
+        <item>관악구</item>
+
+        <item>광진구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>노원구</item>
+        <item>도봉구</item>
+
+        <item>동대문구</item>
+        <item>동작구</item>
+        <item>마포구</item>
+        <item>서대문구</item>
+        <item>서초구</item>
+
+        <item>성동구</item>
+        <item>성북구</item>
+        <item>송파구</item>
+        <item>양천구</item>
+        <item>영등포구</item>
+
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>종로구</item>
+        <item>중구</item>
+        <item>중랑구</item>
+
+    </string-array>
+
+    <string-array name="spinnerd1">
+        <item>1달</item>
+        <item>2달</item>
+        <item>매주</item>
+        <item>격주</item>
+    </string-array>
+
+    <string-array name="spinnerd2">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="spinnerd3">
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+        <item>토</item>
+        <item>일</item>
+    </string-array>
+
+    <string-array name="place">
+
+        <item>선택 안함</item>
+        <item>공원</item>
+        <item>문화</item>
+        <item>쇼핑몰</item>
+        <item>길거리쇼핑</item>
+        <item>먹거리</item>
+        <item>한강</item>
+        <item>대학가</item>
+        <item>청계천</item>
+        
+
+    </string-array>
+	<string-array name="place2">
+	    <item>공원</item>
+        <item>문화</item>
+        <item>쇼핑몰</item>
+        <item>길거리쇼핑</item>
+        <item>먹거리</item>
+        <item>한강</item>
+        <item>대학가</item>
+        <item>청계천</item>
+        
+
+    </string-array>
+    <string-array name="placesubway">
+
+        <item>선택 안함</item>
+        <item>1호선</item>
+        <item>2호선</item>
+        <item>3호선</item>
+        <item>4호선</item>
+        <item>5호선</item>
+        <item>6호선</item>
+        <item>7호선</item>
+        <item>8호선</item>
+        <item>9호선</item>
+        <item>중앙선</item>
+        <item>분당선</item>
+        <item>신분당선</item>
+		
+    </string-array>
+ <string-array name="food">
+
+        <item>선택 안함</item>
+        <item>샐러드바</item>
+        <item>밥류</item>
+        <item>뜨끈한 국물</item>
+        <item>일식</item>
+        <item>중식</item>
+        <item>고기</item>
+        <item>면요리</item>
+        <item>술안주</item>
+        <item>몸보신</item>
+        <item>치맥</item>
+        <item>간단한 식사</item>
+        <item>양식</item>
+		
+    </string-array>
+
+
+</resources>

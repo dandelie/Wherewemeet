@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/custombar" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home"
+            android:onClick="home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mainselect1"
+            android:id="@+id/mainselect1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:textSize="25dp"
+            android:textStyle="bold"  />
+
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:padding="0sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/setting"
+            android:onClick="setting"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/makeroomname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/makeroomname"
+        android:textSize="18dp"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/custombar"
+        android:layout_marginLeft="57dp"
+        />
+
+    <EditText
+        android:id="@+id/roomname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/makeroomhint"
+        android:layout_alignBaseline="@+id/makeroomname"
+        android:layout_alignTop="@+id/makeroomname"
+        android:layout_toRightOf="@+id/makeroomname"
+        android:layout_toEndOf="@+id/makeroomname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_below="@+id/roomname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="24dp"
+        android:text="@string/makeroomfriend"
+        android:id="@+id/makeroomfriend"
+        android:layout_below="@+id/textView"
+        android:layout_gravity="center_horizontal" android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:paddingTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/f5"
+        android:id="@+id/mrrefreshbutton"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/makeroomfriend"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="2dp"
+        android:onClick="makeroomrefresh"/>
+
+    <ScrollView
+        android:id="@+id/roomscroll"
+        android:layout_below="@+id/makeroomfriend"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:fastScrollEnabled="true"
+        android:layout_centerHorizontal="true"
+        android:fadeScrollbars="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_cornerc">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/makeroomfriend1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="다음 단계로"
+        android:onClick="makeroomnext"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/roomscroll"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/makeroomfriend"
+        android:layout_alignStart="@+id/makeroomfriend"
+        android:layout_alignRight="@+id/makeroomfriend"
+        android:layout_alignEnd="@+id/makeroomfriend"
+        android:background="@drawable/button"/>
+</RelativeLayout>
+  
