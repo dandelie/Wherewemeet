@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="23" />
+ <uses-permission android:name="android.permission.INTERNET" />    
+ <uses-permission android:name="android.permission.GET_ACCOUNTS" />    
+ <uses-permission android:name="android.permission.WAKE_LOCK" />    
+ <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />    
+ <permission android:name="com.example.test.permission.C2D_MESSAGE"    android:protectionLevel="signature" />    
+ <uses-permission android:name="com.example.test.permission.C2D_MESSAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver
+ 			android:name="com.google.android.gcm.GCMBroadcastReceiver" 
+ 			android:permission="com.google.android.c2dm.permission.SEND" >
+ 			<intent-filter>
+ 				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+ 				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+ 				<category android:name="com.example.test" />
+ 			</intent-filter>
+ 		</receiver>   
+ 		<receiver
+ 		    android:name=".AlarmReceive"
+ 		    android:process=":remote">
+ 		</receiver>
+         <service android:name="com.example.test.GCMIntentService" />
+         <activity android:name=".login"/>
+        <activity android:name=".findmyfriend"></activity>
+        <activity android:name=".lognewid"></activity>
+        <activity android:name=".lognewidtest"></activity>
+        <activity android:name=".Mainselect"></activity>
+        <activity android:name=".removelog"></activity>
+        <activity android:name=".Settingmain"></activity>
+        <activity android:name=".settingpush"></activity>
+        <activity android:name=".FriendThread"></activity>
+        <activity android:name=".autologin"></activity>
+        <activity android:name=".LoginThread"></activity>
+        <activity android:name=".makeroom"></activity>
+        <activity android:name=".Selectgroup"></activity>
+        <activity android:name=".RoomThread"></activity>
+        <activity android:name=".selectmeet"></activity>
+        <activity android:name=".makemeet"></activity>
+        <activity android:name=".meet"></activity>
+        <activity android:name=".removeid"></activity>
+        <activity android:name=".removepass"></activity>
+        <activity android:name=".Date_main_activity"></activity>
+        <activity android:name=".place1_activity"></activity>
+        <activity android:name=".place2_activity"></activity>
+        <activity android:name=".time_activity"></activity>
+        <activity android:name=".food_main_activity"></activity>
+        <activity android:name=".newgroup1"></activity>
+        <activity android:name=".newgroup2"></activity>
+        <activity android:name=".newgroup4"></activity>
+        <activity android:name=".newgroup5"></activity>
+        <activity android:name=".newgroup6"></activity>
+        <activity android:name=".Web"></activity>
+        <service android:name=".SocketService"></service>
+        
+    </application>
+
+    
+</manifest>
