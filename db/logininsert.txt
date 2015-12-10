@@ -1,0 +1,5 @@
+insert into login(id,pw,name) values("hanna","www","한나");
+insert into login(id,pw,name) values("yong","www","영은");
+insert into login(id,pw,name) values("ryang","www","량희");
+insert into login(id,pw,name) values("a","www","1");
+insert into login(id,pw,name) values("a2","www","2");
